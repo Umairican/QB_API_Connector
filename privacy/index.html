@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy</title>
+  <style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:2rem;line-height:1.6;color:#222}</style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p><em>Last updated: <span id="d"></span></em></p>
+
+  <h2>Scope</h2>
+  <p>This policy covers the QuickBooks → Azure Data Factory reporting integration operated by <strong>COMPANY_NAME</strong>.</p>
+
+  <h2>Data We Retrieve</h2>
+  <ul>
+    <li>Accounting report data (General Ledger, A/R Aging, A/P Aging, Trial Balance) and associated metadata.</li>
+  </ul>
+
+  <h2>How We Use Data</h2>
+  <p>To produce internal financial analytics and dashboards. No data is shared with third parties
+     except processors (e.g., Microsoft Azure) acting under our instructions.</p>
+
+  <h2>Security</h2>
+  <ul>
+    <li>Transport: TLS 1.2+</li>
+    <li>Storage: Azure (encryption at rest)</li>
+    <li>Secrets: Azure Key Vault</li>
+    <li>Access controls: Azure AD / RBAC, least privilege</li>
+  </ul>
+
+  <h2>Retention</h2>
+  <p>Raw report data retained up to 13 months (configurable). Aggregations may be retained longer
+     per business or legal requirements.</p>
+
+  <h2>Your Choices</h2>
+  <p>Admins can revoke access in QuickBooks at any time; upon revocation, pulls stop immediately.</p>
+
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:support@yourcompany.com">support@yourcompany.com</a></p>
+
+  <p><a href="../">← Back</a></p>
+  <script>document.getElementById('d').textContent = new Date().toISOString().slice(0,10);</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QuickBooks → Azure Data Factory (Read-only Reports)</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 2rem; line-height: 1.6; color:#222; }
+    header, footer { color:#555; }
+    nav a { margin-right:1rem; }
+    .card { border:1px solid #e5e5e5; border-radius:8px; padding:1rem; margin:1rem 0; }
+    code { background:#f6f6f6; padding:.1rem .3rem; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>QuickBooks → Azure Data Factory (Read-only Reports)</h1>
+    <p>Public informational pages to satisfy QuickBooks API Production requirements.</p>
+  </header>
+
+  <nav>
+    <a href="./qbo/connect/">Connect</a>
+    <a href="./qbo/disconnect/">Disconnect</a>
+    <a href="./privacy/">Privacy</a>
+    <a href="./terms/">Terms</a>
+  </nav>
+
+  <section class="card">
+    <h2>About</h2>
+    <p><strong>COMPANY_NAME</strong> performs a one-time OAuth consent to obtain a refresh token for secure,
+    read-only access to accounting reports (General Ledger, A/R Aging, A/P Aging, Trial Balance) from
+    QuickBooks Online. Data is transported over TLS 1.2+ and stored in our Microsoft Azure tenant for BI/analytics.</p>
+  </section>
+
+  <section class="card">
+    <h3>Contact</h3>
+    <p>Questions? Email <a href="mailto:support@yourcompany.com">support@yourcompany.com</a>.</p>
+  </section>
+
+  <footer>
+    <p>© <span id="y"></span> COMPANY_NAME</p>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
